@@ -1,0 +1,44 @@
+.el-form-item__content{
+    margin-left: 0 !important;
+}
+
+.el-dialog.is-fullscreen{
+    display: flex;
+    flex-direction: column;
+
+    & .el-dialog__body{
+        flex: 1;
+        max-height: 90vh;
+        overflow: auto;
+        padding: 10px 20px !important;
+    }
+
+    & .el-dialog__footer{
+        border-top: 1px solid #ececec;
+        padding: 10px !important;
+    }
+}
+
+.el-message-box{
+    width: unset;
+}
+
+.el-input-number__increase, .el-input-number__decrease {
+    border-radius: 50%;
+    font-size: 17px;
+    background-color: $--color-primary;
+    font-weight: bold;
+    color: white;
+    &:hover {
+        color: white !important;
+    }
+}
+
+.el-input__inner {
+    border: none !important;
+    font-size: 27px !important;
+}
+
+.el-dropdown-menu{
+    padding: 10px !important;
+}
