@@ -1,13 +1,13 @@
 
 var url = window.location.href;
-var swLocation = '../public/sw.js';
+var swLocation = '../public/service-worker.js';
 
 
 if ( navigator.serviceWorker ) {
 
 
     if ( url.includes('localhost') ) {
-        swLocation = '../sw.js';
+        swLocation = '../service-worker.js';
     }
     navigator.serviceWorker.register( swLocation );
 }
